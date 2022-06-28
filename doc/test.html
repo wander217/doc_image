@@ -5,45 +5,143 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="container" style="width: 100%;">
-        <table style="width: 100%;">
+<div class="container" style="width: 100%; margin: 100px 0 0 0; box-sizing: border-box; font-size: 18px;">
+<!--    Start other-->
+    <table style="width: 100%;">
+        <tbody>
+        <tr>
+            <td style="text-align: center;" id="department">${department}</td>
+            <td style="text-align: center; font-weight: bold;" id="nation">${nation}</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;font-weight: bold;" id="room">${room}</td>
+            <td style="text-align: center; font-weight: bold;" id="slogan">${slogan}</td>
+        </tr>
+        </tbody>
+    </table>
+<!--    End other-->
+    <div style="border-bottom: 2px black solid; width: 160px; height: 0; position: absolute; left: 170px;"></div>
+    <div style="border-bottom: 2px black solid; width: 210px; height: 0; position: absolute; right: 130px;"></div>
+<!--    Start contract type-->
+    <div style="text-align: center; font-weight: bold; font-size: 25px; margin: 40px 0 0 10px;" id="contract_type_1">
+        GIẤY CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP
+    </div>
+    <div style="text-align: center; font-weight: bold; font-size: 25px; margin-bottom: 10px;" id="contract_type_2">
+        CÔNG TY CỔ PHẦN
+    </div>
+<!--    End contract type-->
+<!--    Start contract code-->
+    <p style="text-align: center; font-weight: bold; font-size: 18px; margin: 0;" id="company_code">
+        Mã số doanh nghiệp: ${company_code}
+    </p>
+<!--    End contract code-->
+<!--    Start register date-->
+    <p style="text-align: center; font-style: oblique; font-size: 16px; margin: 10px 0 0 0;" id="first_register_date">
+        ${first_register_date}
+    </p>
+    <p style="text-align: center; font-style: oblique; font-size: 16px; margin: 0;" id="second_register_date">
+        ${second_register_date}
+    </p>
+<!--    End register date-->
+<!--    Start company name-->
+    <div style="margin: 0 20px; font-size: 18px;">
+        <p style="text-align: left; font-weight: bold; margin-left: 30px; margin-top: 30px; margin-bottom: 0;" id="company_name_label">
+            1. Tên công ty:
+        </p>
+        <div style="margin-left: 50px; margin-right: 50px;">
+            <p style="text-align: left; font-weight: normal;  margin-top: 5px; margin-bottom: 0;" id="vietnamese_company_name">
+                ${vietnamese_company_name}
+            </p>
+            <p style="text-align: left; font-weight: normal; margin-top: 5px; margin-bottom: 0;" id="foreign_company_name">
+                ${foreign_company_name}
+            </p>
+            <p style="text-align: left; font-weight: normal; margin-top: 5px; margin-bottom: 0;" id="short_company_name">
+                ${short_company_name}
+            </p>
+        </div>
+    </div>
+<!--    End company name-->
+<!--    Start address-->
+    <div style="margin: 0 20px; font-size: 18px;">
+         <p style="text-align: left; margin-left: 30px; margin-bottom: 0; margin-top: 10px;">
+             <span style="font-weight: bold;" id="label_company_address">2. Địa chỉ trụ sở chính:</span>
+             <span id="company_address">${company_address}</span>
+        </p>
+        <table style="width: 100%; margin: 0 50px; box-sizing: border-box;">
             <tbody>
                 <tr>
-                    <td style="text-align: center;">SỞ KẾ HOẠCH VÀ ĐẦU TƯ THÀNH PHỐ HÀ NỘI</td>
-                    <td style="text-align: center; font-weight: bold;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</td>
+                    <td style="text-align: left;">Điện thoại:</td>
+                    <td style="text-align: left;">Fax:</td>
                 </tr>
                 <tr>
-                    <td style="text-align: center;">PHÒNG ĐĂNG KÝ KINH DOANH</td>
-                    <td style="text-align: center; font-weight: bold; font-size: 16px;">Độc lập - Tự do - Hạnh phúc</td>
+                    <td style="text-align: left;">Email:</td>
+                    <td style="text-align: left;">Website:</td>
                 </tr>
             </tbody>
         </table>
-        <div style="border-bottom: 2px black solid; width: 260px; height: 0; position: absolute; left: 80px;"></div>
-        <div style="border-bottom: 2px black solid; width: 220px; height: 0; position: absolute; right: 90px;"></div>
-        <p style="text-align: center; font-weight: bold; font-size: 20px; margin-bottom: 10px;">
-            GIẤY CHỨNG NHẬN ĐĂNG KÝ DOANH NGHIỆP <br> CÔNG TY CỔ PHẦN
+    </div>
+<!--    End address-->
+<!--    Start capital-->
+    <div style="margin: 0 20px;">
+         <p style="text-align: left; font-size: 18px; margin-left: 30px; margin-bottom: 0; margin-top: 10px;">
+             <span style="font-weight: bold;">3. Vốn đầu tư</span>
+             <span style="font-style: oblique">
+                 (bằng số; bằng chữ; VNĐ và giá trị tương đương theo đơn vị tiền nước ngoài, nếu có):
+             </span>
         </p>
-        <p style="text-align: center; font-weight: bold; font-size: 18px; margin: 0;">
-            Mã số doanh nghiệp: 0123S2313
-        </p>
-        <p style="text-align: center; font-style: oblique; font-size: 16px; margin: 10px 0 0 0;">
-            Đăng ký lần đầu, thứ 4 ngày 21 tháng 7 năm 1999
-        </p>
-        <p style="text-align: center; font-style: oblique; font-size: 16px; margin: 0;">
-            Đăng ký lần thứ 2, thứ 5 ngày 21 tháng 7 năm 2000
-        </p>
-        <p style="text-align: left; font-weight: bold; font-size: 16px; margin-left: 30px; margin-top: 30px; margin-bottom: 0;">
-            1. Tên công ty:
-        </p>
-        <p style="text-align: left; font-weight: normal; font-size: 16px; margin-left: 40px; margin-top: 5px; margin-bottom: 0;">
-            Tên công ty viết bằng tiếng Việt (ghi bằng chữ in hoa): CÔNG TY ABC
-        </p>
-        <p style="text-align: left; font-weight: normal; font-size: 16px; margin-left: 40px; margin-top: 5px; margin-bottom: 0;">
-            Tên công ty viết bằng tiếng nước ngoài (nếu có): ABC COMPANY
-        </p>
-        <p style="text-align: left; font-weight: normal; font-size: 16px; margin-left: 40px; margin-top: 5px; margin-bottom: 0;">
-            Tên viết tắt (nếu có): ABC
+        <p style="text-align: left; font-size: 18px; margin-left: 50px; margin-bottom: 0; margin-top: 5px;">
+             <span style="font-style: oblique;">Bằng chữ:</span>
         </p>
     </div>
+<!--    End capital-->
+<!--    Start owner-->
+    <div style="margin: 0 20px; font-size: 18px;">
+         <p style="text-align: left; margin-left: 30px; margin-bottom: 0; margin-top: 10px;">
+             <span style="font-weight: bold;">4. Chủ doanh nghiệp:</span>
+        </p>
+        <table style="width: 100%; margin: 0 50px; box-sizing: border-box;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width: 33%;" colspan="2">
+                        Họ và tên <span style="font-style: oblique;">(ghi bằng chữ in hoa):</span>
+                    </td>
+                    <td style="text-align: left; width: 33%;">Giới tính:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; width: 33%;">Sinh ngày:</td>
+                    <td style="text-align: left; width: 33%;">Dân tộc:</td>
+                    <td style="text-align: left; width: 33%;">Quốc tịch:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" colspan="3">Loại giấy tờ cá nhân:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" colspan="3">Số giấy tờ cá nhân:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; width: 33%;">Ngày cấp:</td>
+                    <td style="text-align: left; width: 33%;" colspan="2">Nơi cấp:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" colspan="3">Địa chỉ thường trú:</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;" colspan="3">Địa chỉ liên lạc:</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!--    End owner-->
+<!--    Start sign-->
+    <div style="margin: 40px 20px;">
+        <p style="text-align: right; margin-right: 100px; margin-bottom: 0; margin-top: 10px;">
+             <span style="font-weight: bold;font-size: 20px;">TRƯỞNG PHÒNG</span>
+        </p>
+        <p style="text-align: right; margin-right: 110px; margin-bottom: 0; margin-top: 0;">
+             <span style="font-style: oblique; font-size: 18px;">(Ký và ghi rõ họ tên)</span>
+        </p>
+    </div>
+<!--    End sign-->
+</div>
 </body>
 </html>
